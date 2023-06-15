@@ -32,8 +32,52 @@
     outline: none;
     border-radius: 25px;
     margin: 0 0 30px 0;
-    &::placeholder{
-        text-align: center;
+    &::placeholder {
+      text-align: center;
     }
   }
+
+  &__data {
+    color: #fff;
+  }
+
+  &__info{
+    display: flex;
+    gap:20px;
+    background-color: $infoBoxBg;
+    color: $infoBoxTextColor;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+
+  }
+  &__region,
+  &__details{
+    p{
+        margin: 0 0 5px 0;
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+  }
+  &__temp{
+    font-size: 60xp;
+    display: flex;
+
+    span{
+        font-size: 30px;
+        padding: 6px 0 0 0;
+    }
+  }
+
+  &__error{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $errorBoxBg;
+    font-weight: 700;
+    color: $errorBoxColor;
+    letter-spacing: 1px;
+  }
 }
+  
+
